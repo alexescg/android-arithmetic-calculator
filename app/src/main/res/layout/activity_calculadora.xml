@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.alex.calculadora.CalculadoraActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextNum1"
+        android:text="0"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/buttonEquals"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonEquals"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="96dp"
+        android:id="@+id/textViewResult"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonDivision"
+        android:textOff="@string/division_symbol"
+        android:textOn="@string/division_symbol"
+        android:minWidth="80dip"
+        android:layout_alignBaseline="@+id/toggleButtonMultiplication"
+        android:layout_alignBottom="@+id/toggleButtonMultiplication"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+
+    <ToggleButton
+        android:text="x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonMultiplication"
+        android:textOff="@string/multiplication_symbol"
+        android:textOn="@string/multiplication_symbol"
+        android:minWidth="80dip"
+        android:layout_alignBaseline="@+id/toggleButtonSubtraction"
+        android:layout_alignBottom="@+id/toggleButtonSubtraction"
+        android:layout_toStartOf="@+id/toggleButtonDivision" />
+
+    <ToggleButton
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonSubtraction"
+        android:textOff="@string/subtraction_symbol"
+        android:textOn="@string/subtraction_symbol"
+        android:minWidth="80dip"
+        android:layout_alignBaseline="@+id/toggleButtonAddition"
+        android:layout_alignBottom="@+id/toggleButtonAddition"
+        android:layout_toStartOf="@+id/toggleButtonMultiplication" />
+
+    <ToggleButton
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButtonAddition"
+        android:textOff="@string/sum_symbol"
+        android:textOn="@string/sum_symbol"
+        android:layout_marginTop="19dp"
+        android:minWidth="80dip"
+        android:layout_below="@+id/editTextNum1"
+        android:layout_toStartOf="@+id/toggleButtonSubtraction" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextNum2"
+        android:text="0"
+        android:gravity="right"
+        android:layout_below="@+id/toggleButtonDivision"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

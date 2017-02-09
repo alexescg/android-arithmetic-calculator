@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">calculadora</string>
+    <string name="sum_symbol">+</string>
+    <string name="subtraction_symbol">-</string>
+    <string name="multiplication_symbol">×</string>
+    <string name="division_symbol">÷</string>
+</resources>
